@@ -1,0 +1,62 @@
+# To  print patterns
+
+
+# pattern 1 - print a right-angled triangle pattern of asterisks
+
+
+rows = int(input("Enter the number of rows: "))
+
+for i in range(1, rows + 1):
+    print("*" * i)
+
+
+#Output:
+
+Enter the number of rows: 5
+*
+* *
+* * *
+* * * *
+* * * * *
+
+
+
+# pattern 2 - print an inverted triangle pattern of numbers
+
+# Input the number of rows for the inverted triangle
+rows = int(input("Enter the number of rows: "))
+
+# Loop to print the pattern
+for i in range(rows, 0, -1):  # Starts from 'rows' and decreases to 1
+    for j in range(1, i + 1):  # Prints numbers from 1 to the current row number
+        print(j, end=" ")
+    print()  # Newline after each row
+
+
+#Output:
+
+Enter the number of rows: 5
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2
+1
+
+# pattern 3 - print an right-angled triangle pattern of alphabets
+
+# Input the number of rows for the triangle
+rows = int(input("Enter the number of rows: "))
+
+# ASCII value of 'A' is 65
+for i in range(1, rows + 1):
+    for j in range(i):
+        print(chr(65 + j), end=" ")
+    print()
+
+#Output:
+Enter the number of rows: 5
+A
+A B
+A B C
+A B C D
+A B C D E

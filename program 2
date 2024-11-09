@@ -1,0 +1,60 @@
+Input two numbers and display the larger / smaller number. 
+
+#1. To find larger number
+
+# Input two numbers
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+# Determine and display the larger number
+if num1 >= num2:
+    print("The larger number is:", num1)
+else:
+    print("The larger number is:", num2)
+
+#Output:
+Enter the first number: 10
+Enter the second number: 5
+The larger number is: 10
+
+
+#2. To find smaller number
+
+# Input two numbers
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+# Determine and display the smaller number
+if num1 <= num2:
+    print("The larger smaller is:", num1)
+else:
+    print("The larger smaller is:", num2)
+
+#Output
+Enter the first number: 10
+Enter the second number: 5
+The smaller number is: 5
+
+
+
+#3. To find larger/smaller number in same program
+
+# Input two numbers
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+# Determine and display the larger and smaller numbers
+if num1 > num2:
+    print("Larger number:", num1)
+    print("Smaller number:", num2)
+elif num2 > num1:
+    print("Larger number:", num2)
+    print("Smaller number:", num1)
+else:
+    print("Both numbers are equal:", num1)
+
+#Output:
+Enter the first number: 10
+Enter the second number: 5
+Larger number: 10
+Smaller number: 5

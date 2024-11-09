@@ -1,0 +1,44 @@
+# Input three numbers and display the largest / smallest number. 
+
+#1. Using logical operator 'and'
+
+# Input: Three numbers
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+c = int(input("Enter the third number: "))
+
+
+if a>=b and a>=c:
+    largest=a
+elif b>=a and b>=c:
+    largest=b
+else:
+    largest=c
+
+print("The largest number is:", largest)
+
+
+#2. Using nested if
+
+# Input: Three numbers
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+c = int(input("Enter the third number: "))
+if a>=b:
+    if a>=c:
+        largest=a
+    else:
+        largest=c
+else:
+    if b>=c:
+        largest=b
+    else:
+        largest=c
+
+print("The largest number is:", largest)
+
+#Output
+Enter the first number: 10
+Enter the second number: 5
+Enter the third number: 2
+The largest number is: 10

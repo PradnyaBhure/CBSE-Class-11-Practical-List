@@ -1,0 +1,11 @@
+# Program 1 - Input a welcome message and display it. 
+
+# Input the welcome message from the user
+message = input("Enter a welcome message: ")
+
+# Display the message
+print("Your welcome message is:", message)
+
+#Output:
+Enter a welcome message: Welcome to Python Session
+Your welcome message is: Welcome to Python Session

@@ -1,3 +1,25 @@
+# Program to display Fibonacci series
+
+n=int(input("Enter number of terms:"))
+
+# First two terms
+term1,term2=0,1
+print(term1,term2,end=" ")
+
+for i in range(n-2):
+
+    # Calculate next term
+    next=term1+term2
+    print(next,end=" ")
+
+    # update Values
+    term1=term2
+    term2=next
+
+#Output
+Enter number of terms:8
+0 1 1 2 3 5 8 13
+
 #Compute the GCD and LCM of two integers
 
 num1=int(input('Enter First Number:'))
